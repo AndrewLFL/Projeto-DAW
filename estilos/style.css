@@ -11,7 +11,13 @@ padding: 10px;
 }
 
 .logo{
-width: 200px;
+width: 220px;
+padding-top: 15px;
+padding-left: 28px;
+}
+
+#final{
+  padding-right: 28px;
 }
 
 header{
@@ -19,12 +25,18 @@ header{
 }
 
 #space{
-padding-left: 200px;
+width: 600px;;
+}
+
+
+#tabela{
+width: 1900px;
 
 }
 
 .menu {
-padding-right: 100px;
+
+width: 150px;
 font-family: "Labrada",serif;
 font-weight: 600;
 font-size:22px;
@@ -32,7 +44,7 @@ font-size:22px;
 
 a{
 color: #5a969d;
-text-decoration:none;
+text-decoration:none; 
 }
 
 main{
@@ -40,11 +52,21 @@ margin-top: 20px;
 margin-left: 100px;
 }
 
+#texto{
+padding-left:100px;
+width:45vw;
+}
+
+#imagem{
+padding-right: 50px;
+width: 45vw;
+}
+
 h1{
 font-family: "Labrada",serif;
 font-weight: bold;
 font-weight: 800;
-font-size: 64px;
+font-size: 77px;
 margin: 0;
 }
 
@@ -53,25 +75,24 @@ line-height: 10px;
 font-family: "Labrada",serif;
 font-weight: bold;
 font-weight: 600;
-font-size: 35px;
+font-size: 41.75px;
 }
 
 p{
+font-size: 17px;
 line-height: 20px;
-max-width: 580px;
+max-width: 700px;
 font-family: "Noto Sans",sans-serif;
 }
 
 .rigth-div{
-padding: 0px 20px;
+text-align: center;
+align-items: center;
 }
 
-.left-div{
-padding: 45px 0px;
-    }
 
 .honey{
-width: 550px;
+width: 680px;
 }
 
 .hat{
@@ -81,7 +102,7 @@ width: 60px;
 .loja-btn{
 background-color: #995f84;
 color: #14101d;
-margin-top: -10px;
+margin-top: 15px;
 height: 50px;
 width: 350px;
 border-radius: 20px;

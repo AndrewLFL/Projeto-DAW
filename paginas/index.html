@@ -5,29 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="shortcut icon" href="../imagens/hat.png" type="image/x-icon">
     <title>Witch's House</title>
 
 </head>
 <body>
-    <header>
-        <table>
-            <tr>
+
+        <table id="tabela">
+            <tr id="linha">
                 <td class="menu">
                     <img src="../imagens/logo.png" class="logo" alt="Witch's House"> <br>
                 </td>
                 <td class="menu" id="space"></td>
-                <td class="menu"><a href="#">Sobre</a></td>
-                <td class="menu"><a href="#">Produtos</a></td>
-                <td class="menu"><a href="#">Contato</a> </td>
-                <td class="menu"><a href="#">Já tem uma conta?</a></td>
+                <td class="menu"><a href="sobre.html">Sobre</a></td>
+                <td class="menu"><a href="loja.html">Produtos</a></td>
+                <td class="menu"><a href="contato.html">Contato</a> </td>
+                <td class="menu" id="final"><a href="entrar.html">Já tem uma conta?</a></td>
             </tr>
         </table>
-    </header>
-
     <main>
         <table>
             <tr>
-                <td> 
+                <td id="texto"> 
                     <div class="left-div"> 
                         <h1>Conheça nossa Loja</h1>
                         <h2>Entre para o mundo Mágico dos Doces</h2>
@@ -35,16 +34,16 @@
                         <button class="loja-btn">Ir para a Loja</button>
                     </div>
             </td>
-                <td>
+                <td id="imagem">
                     <div class="rigth-div">
                         <img src="../imagens/honey.svg" class="honey" alt="sweet">
                     </div>                    
                 </td>
             </tr>
-
         </table>
- 
-
-    </main>
+    </main>    
+    <audio autoplay preload="auto" loop>
+        <source src="../sons/piano-bell-sound-1-27144.mp3" type="audio/mp3">
+    </audio>
 </body>
 </html>

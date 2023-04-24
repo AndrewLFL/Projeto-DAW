@@ -3,18 +3,98 @@
 
 body{
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    max-width: 100vw;
     background-color: #14101d;
 }
 
-#div-left{
-    background-color: #f0e5ec;
-    width: 500px;
-    height: 500px;
-    border-radius: 10px;
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    li{
+        font-family: 'Labrada', sans-serif;
+        display: inline-block;
+        margin: 10px;
+        font-weight: 600;
+        font-size:23px;
+        margin-left: 56px;
+        margin-right:32px;
+        }
+        
+        a{
+        color: #5a969d;
+        text-decoration: none;
+        } 
+
+
+        .logo{
+            width: 240px;
+            padding-top: 15px;
+            padding-left: 28px;
+            }
+
+div#container
+{
+    width: 99vw;
+    height:80vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #div-right{
+    display: flex;
+    justify-content: center;
+    background-color: #f0e5ec;
+    width: 650px;
+    height: 600px;
+    border-radius: 0px 10px 10px 0px ;
+}
 
+#div-left{
+    background-color: #41393e;
+    width: 650px;
+    height: 600px;
+    border-radius: 10px 0px 0px 10px ;
 
+}
+
+#botao{
+    background-color: #995f84;
+    color: #ebebebee;
+    margin-top: 15px;
+    height: 50px;
+    width: 350px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: "Labrada",serif;
+    font-style: black;
+    font-weight: 600;
+}
+
+#btn{
+    padding-top: 10px;
+    background-color: #995f84;
+    color: #ebebebee;
+    margin-top: 15px;
+    height: 50px;
+    width: 350px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: "Labrada",serif;
+    font-style: black;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }

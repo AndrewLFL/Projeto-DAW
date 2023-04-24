@@ -9,39 +9,38 @@ font-family: 'Labrada', serif;
 font-family: 'Noto Sans', sans-serif;
 max-width: 100vw;
 padding: 10px;
+
 }
 
 .logo{
-width: 220px;
+width: 240px;
 padding-top: 15px;
 padding-left: 28px;
 }
 
-#final{
-  padding-right: 28px;
-}
-
 header{
-  margin: 10px 40px;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  }
 
-#space{
-width: 600px;;
-}
+  li{
+      display: inline-block;
+      margin: 20px;
+      font-family: "Labrada",serif;
+      font-weight: 600;
+      font-size:23px;
+      margin-left: 56px;
+      margin-right:32px;
+      }
+      
+      a{
+      color: #5a969d;
+      } 
 
 
-#tabela{
-width: 1900px;
 
-}
-
-.menu {
-
-width: 150px;
-font-family: "Labrada",serif;
-font-weight: 600;
-font-size:22px;
-}
 
 a{
 color: #5a969d;

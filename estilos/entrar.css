@@ -8,6 +8,8 @@ body{
     background-color: #14101d;
 }
 
+
+
 header{
     display: flex;
     flex-direction: row;
@@ -37,6 +39,10 @@ header{
             padding-left: 28px;
             }
 
+#house{
+    height: 560px;
+}
+
 div#container
 {
     width: 99vw;
@@ -52,21 +58,23 @@ div#container
     display: flex;
     justify-content: center;
     background-color: #f0e5ec;
-    width: 650px;
-    height: 600px;
+    width: 600px;
+    height: 515px;
     border-radius: 0px 10px 10px 0px ;
 }
 
 #div-left{
-    background-color: #41393e;
-    width: 650px;
-    height: 600px;
+    background-color: rgb(62, 63, 63);
+    width: 600px;
+    height: 515px;
     border-radius: 10px 0px 0px 10px ;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #botao{
-    background-color: #995f84;
+    background-color: #5a969d;
     color: #ebebebee;
     margin-top: 15px;
     height: 50px;
@@ -82,7 +90,7 @@ div#container
 
 #btn{
     padding-top: 10px;
-    background-color: #995f84;
+    background-color: #5a969d;
     color: #ebebebee;
     margin-top: 15px;
     height: 50px;

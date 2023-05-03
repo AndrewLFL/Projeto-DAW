@@ -17,7 +17,8 @@ header{
     align-items: center;
     }
 
-    li{
+    li
+    {
         font-family: 'Labrada', sans-serif;
         display: inline-block;
         margin: 10px;
@@ -57,14 +58,14 @@ div#container
 #div-right{
     display: flex;
     justify-content: center;
-    background-color: #f0e5ec;
+    background-color: rgb(61, 65, 111);
     width: 600px;
     height: 515px;
     border-radius: 0px 10px 10px 0px ;
 }
 
 #div-left{
-    background-color: rgb(62, 63, 63);
+    background-color: rgb(61, 65, 111);
     width: 600px;
     height: 515px;
     border-radius: 10px 0px 0px 10px ;
@@ -73,19 +74,36 @@ div#container
     align-items: center;
 }
 
+#formulario{
+    width: 500px;
+    height: 300px;
+    background-color: rgb(77, 81, 123);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.562);
+}
+
+#mail{
+
+}
+
 #botao{
     background-color: #5a969d;
     color: #ebebebee;
     margin-top: 15px;
-    height: 50px;
-    width: 350px;
+    height: 45px;
+    width: 170px;
     border-radius: 20px;
     border: none;
     outline: none;
     font-size: 20px;
-    font-family: "Labrada",serif;
+    font-family: "Noto Sans",serif;
     font-style: black;
-    font-weight: 600;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
 #btn{
@@ -105,4 +123,11 @@ div#container
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+#cad{
+    color: rgb(216, 217, 226);
+    font-family: "Noto Sans",serif;
+    font-size: 13.5px;
+    letter-spacing: 0.75px;
 }

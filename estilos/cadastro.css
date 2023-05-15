@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Labrada:wght@400;500;700;900&family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800;900&display=swap');
+
+body{
+    margin: 0;
+    padding: 10px;
+    max-width: 100vw;
+    background-color: #14101d;
+    font-family: "Noto Sans","Sans Serif";
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    li
+    {
+        font-family: 'Labrada', sans-serif;
+        display: inline-block;
+        margin: 10px;
+        font-weight: 600;
+        font-size:23px;
+        margin-left: 56px;
+        margin-right:32px;
+        }
+        
+        a{
+        color: #5a969d;
+        text-decoration: none;
+        } 
+        
+        a:hover
+        {
+          color: #995f84;
+        }
+
+        .logo{
+            width: 240px;
+            padding-top: 15px;
+            padding-left: 28px;
+            }
+
+div#container{
+    width: 99vw;
+    height:80vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main{
+    background-color: rgb(61, 65, 111);
+    width: 1100px;
+    height: 750px;
+    border-radius: 15px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rows{
+    width: 950px;
+    height: 55px;
+    margin: 10px;
+    background-color: #995f84;
+}

@@ -57,20 +57,21 @@ div#container{
 
 main{
     background-color: rgb(61, 65, 111);
-    width: 900px;
-    height: 600px;
+    width: 1050px;
+    height: 900px;
     border-radius: 15px;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 div#formulario
 {
-    width: 500px;
-    height: 500px;
+    width: 1000px;
+    height: 850px;
     margin-top: -50px;
     display: flex;
     flex-direction: column;
@@ -79,9 +80,12 @@ div#formulario
 }
 
 .rows{
-    width: 800px;
+    width: 720px;
     height: 55px;
     margin: 10px;
+    margin-left:50px;
+    margin-right: 50px;
+
 }
 
 h1{
@@ -92,11 +96,12 @@ h1{
 }
 
 #botao{
+    text-align: center;
     background-color: #5a969d;
     color: #ebebebee;
     margin-top: 15px;
-    height: 45px;
-    width: 170px;
+    height: 60px;
+    width: 300px;
     border-radius: 20px;
     border: none;
     outline: none;
@@ -115,7 +120,7 @@ h1{
 
   input{
     margin-top:20px;
-    height: 20px;
+    height: 30px;
     color: rgb(68, 71, 90);
     font-weight: 900px;
     font-size: 28px;
@@ -129,17 +134,20 @@ h1{
   }
 
   #nome{
-    width: 300px;
+    width: 350px;
 }
 
 #sobrenome{
-    margin-left: -50px;
-    width: 350px;
+    margin-left: 35px;
+    width: 400px;
 }
+#email{
+
+width: 700px;}
 
 #row1{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    padding: 0;
 }

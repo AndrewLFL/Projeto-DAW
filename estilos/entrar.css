@@ -196,20 +196,38 @@ input{
     color: rgb(68, 71, 90);
     font-weight: 900;
     position: absolute;
-    bottom: 205px; /* 205px */
+    bottom: 196px; /* 205px */
     left: 25px;
     width: 200px; /* 200px */
     height:  30px;
-    font-size: 18px;
+    font-size: 22px;
+    pointer-events: none;
+    transition: .5s;
+  }
+
+  input.email:focus~label.email, input.email:valid~label.email
+  {
+    bottom: 200px; /* 250px */
+    font-size: 14px;
+    color: var(--cor0);
   }
 
   label.senha {
     color: rgb(68, 71, 90);
     font-weight: 900;
     position: absolute;
-    bottom: 130px;
+    bottom: 120px;
     left: 25px;
-    font-size: 18px;
+    font-size: 22px;
     width: 200px; /* 200px */
     height:  30px;
+    pointer-events: none;
+    transition: .5s;
+  }
+
+  input.senha:focus~label.senha, input.senha:valid~label.senha
+  {
+    bottom: 125px;
+    font-size: 14px;
+    color: var(--cor0);
   }

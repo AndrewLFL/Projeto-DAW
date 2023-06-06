@@ -55,22 +55,23 @@ a:hover
 #arvore{
     margin-top:10px ;
     width: 1900px;
-    height: 825px;
+    height: 760px;
 }
 
 #arvore-left{
-    width: 700px;
+    margin-top: 59px;
+    width: 650px;
 }
 
 #arvore-rigth{
-    padding-left: 495.5px;
-    width: 700px;
+    padding-left: 595px;
+    width: 650px;
 }
             
 #camada-1{
     z-index: -1;
     width: 1900px;
-    height: 825px;
+    height: 760px;
 }
             
 .camada1{

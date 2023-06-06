@@ -13,10 +13,12 @@ padding: 10px;
 }
 
 main{
+  height: 840px;
 display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: row;
+margin-top: 0px;
 }
 
 .logo{
@@ -53,11 +55,6 @@ a{
 color: #5a969d;
 text-decoration:none; 
 }
-
-main{
-margin-top: 0px;
-}
-
 
 #imagem{
 padding-right: 50px;
@@ -102,7 +99,7 @@ width: 850px;
 #hat{
 width: 114px;
 position: absolute;
-bottom: 255px;
+bottom: 265px;
 left: 170px;
 }
 

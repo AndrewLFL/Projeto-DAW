@@ -212,44 +212,65 @@ input{
     font-size: 20px;
     opacity: 1;
 }
+
+
+  label.email {
+    color: rgb(68, 71, 90);
+    font-weight: 900;
+    position: absolute;
+    bottom: 230px; /* 205px */
+    left: 430px;
+    width: 200px; /* 200px */
+    height:  30px;
+    font-size: 28px;
+    pointer-events: none;
+    transition: .5s;
+  }
+/*
+  input.email:focus~label.email, input.email:valid~label.email
+  {
+    bottom: 200px; /* 250px *//*
+    font-size: 14px;
+    color: var(--cor0);
+  }*/
             
-#nome{
+input.nome{
     width: 350px;
 }
             
-#sobrenome{
+input.sobrenome{
     margin-left: 30px;
     width: 400px;
 }
 
-#email
+input.email
 {
     width: 705px;
 }
 
-#tel
+input.tel
 {
     width: 360px;
 }
 
-#cpf
+input.cpf
 {
     margin-left: 30px;
     width: 400px;
 }
 
-#data
+input.data
 {
     width: 360px;
 }
 
-#cep
+input.cep
 {
     margin-left: 30px;
     width: 300px;
 }
 
-#senha{
+input.senha{
     width: 440px;
 }
 

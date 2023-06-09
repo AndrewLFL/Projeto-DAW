@@ -1,0 +1,113 @@
+ @import url('https://fonts.googleapis.com/css2?family=Labrada:wght@400;500;700;900&family=Noto+Sans&display=swap');
+
+  body{
+    background-color: #14101d;
+    color: #f4eef2;
+    margin: 0;
+    font-family: 'Labrada', serif;
+    font-family: 'Noto Sans', sans-serif;
+    max-width: 100vw;
+    padding: 10px;
+    }
+    
+    main{
+    height: 660px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 0px;
+    }
+    
+    .logo{
+    width: 240px;
+    padding-top: 15px;
+    padding-left: 28px;
+    }
+    
+    header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      }
+    
+      li{
+          display: inline-block;
+          margin: 20px;
+          font-family: "Labrada",serif;
+          font-weight: 600;
+          font-size:23px;
+          margin-left: 56px;
+          margin-right:32px;
+          }
+       
+    a{
+    color: #5a969d;
+    text-decoration:none; 
+    }
+    
+    #imagem{
+    padding-right: 50px;
+    width: 45vw;
+    }
+    
+    h1{
+    font-family: "Labrada",serif;
+    font-weight: bold;
+    font-weight: 800;
+    font-size: 77px;
+    margin-top: -40px;
+    }
+    
+    h2{
+    line-height: 10px;
+    font-family: "Labrada",serif;
+    font-weight: bold;
+    font-weight: 600;
+    font-size: 37.4px;
+    margin-top: -30px;
+    }
+    
+    p{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 22px;
+    max-width: 700px;
+    font-family: "Noto Sans",sans-serif;
+    }
+    
+    .rigth-div{
+    text-align: center;
+    align-items: center;
+    }
+    
+    
+    .honey{
+    width: 680px;
+    }
+    
+    #hat{
+    width: 114px;
+    position: absolute;
+    bottom: 175px;
+    left: 100px;
+    }
+    
+    .loja-btn{
+    background-color: #995f84;
+    color: #14101d;
+    margin-top: 100px;
+    height: 65px;
+    width: 400px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    font-family: "Labrada",serif;
+    font-style: black;
+    font-weight: 600;
+    cursor: pointer;
+    }
+
+  

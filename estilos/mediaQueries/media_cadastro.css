@@ -1,0 +1,440 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Labrada:wght@400;500;700;900&family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800;900&display=swap");
+
+:root {
+  --cor0: #995f84;
+  --cor1: #5a969d;
+  --cor2: rgb(61, 65, 111);
+  --cor3: #ebebebee;
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+  width: 97vw;
+  height: 500px;
+  background-color: #14101d;
+  font-family: "Noto Sans", "Sans Serif";
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  font-family: "Labrada", sans-serif;
+  display: inline-block;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 23px;
+  margin-left: 56px;
+  margin-right: 32px;
+}
+
+a {
+  margin-bottom: 10px;
+  color: var(--cor1);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cor0);
+}
+
+.logo {
+  width: 240px;
+  padding-top: 15px;
+  padding-left: 28px;
+}
+
+#arvore {
+  margin-top: 10px;
+  width: 100%;
+}
+
+#arvore-left {
+  margin-top: 59px;
+  width: 200px;
+}
+
+#arvore-rigth {
+  padding-left: 595px;
+  width: 200px;
+}
+
+#camada-1 {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.camada1 {
+  z-index: 1;
+}
+
+#rip {
+  width: 110px;
+  position: absolute;
+  top: 549px;
+  left: 1020px;
+}
+
+#bat {
+  width: 150px;
+  position: absolute;
+  top: 549px;
+  left: 1020px;
+}
+
+#pedra {
+  width: 200px;
+  position: absolute;
+  top: 713px;
+  left: 300px;
+}
+
+#nuvem-right-cima {
+  width: 170px;
+  position: absolute;
+  top: 70px;
+  right: 370px;
+}
+
+#nuvem-right-baixo {
+  width: 170px;
+  position: absolute;
+  top: 270px;
+  right: 260px;
+}
+
+#nuvem-left {
+  width: 170px;
+  position: absolute;
+  top: 225px;
+  left: 250px;
+}
+
+div#container {
+  width: 98vw;
+  height: 80vh;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 0;
+  position: absolute;
+  top: 100px;
+}
+
+main {
+  background-color: var(--cor2);
+  width: 800px;
+  height: 650px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+div#formulario {
+  width: 800px;
+  height: 650px;
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rows {
+  width: 700px;
+  height: 55px;
+  margin: 13px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+h1 {
+  color: var(--cor3);
+  font-size: 55px;
+  font-family: "Labrada", sans-serif;
+  margin-top: 20px;
+}
+
+#botao {
+  text-align: center;
+  background-color: var(--cor1);
+  color: var(--cor3);
+  margin-top: 50px;
+  margin-bottom: 10px;
+  height: 60px;
+  width: 370px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-family: "Noto Sans", serif;
+  font-style: black;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+input#botao:hover {
+  background-color: var(--cor0);
+}
+
+input {
+  margin-top: 20px;
+  height: 30px;
+  color: rgb(68, 71, 90);
+  font-weight: 900px;
+  font-size: 28px;
+  padding: 20px 5px 5px;
+  background-color: rgb(219, 220, 229);
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+  outline: none !important;
+  padding-left: 10px;
+  font-size: 20px;
+  opacity: 1;
+}
+
+label.email {
+  color: rgb(68, 71, 90);
+  font-weight: 900;
+  position: absolute;
+  bottom: 368px;
+  left: 450px;
+  width: 200px;
+  height: 30px;
+  font-size: 28px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input.email:focus ~ label.email,
+input.email:valid ~ label.email {
+  bottom: 375px;
+  font-size: 14px;
+  color: var(--cor0);
+}
+
+label.nome {
+  color: rgb(68, 71, 90);
+  font-weight: 900;
+  position: absolute;
+  bottom: 435px;
+  left: 450px;
+  width: 200px;
+  height: 30px;
+  font-size: 28px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input.nome:focus ~ label.nome,
+input.nome:valid ~ label.nome {
+  bottom: 440px;
+  font-size: 14px;
+  color: var(--cor0);
+}
+
+label.sobrenome {
+  color: rgb(68, 71, 90);
+  font-weight: 900;
+  position: absolute;
+  bottom: 435px;
+  left: 800px;
+  width: 200px;
+  height: 30px;
+  font-size: 28px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input.sobrenome:focus ~ label.sobrenome,
+input.sobrenome:valid ~ label.sobrenome {
+  bottom: 440px;
+  font-size: 14px;
+  color: var(--cor0);
+}
+
+label.tel {
+  color: rgb(68, 71, 90);
+  font-weight: 900;
+  position: absolute;
+  bottom: 300px;
+  left: 450px;
+  width: 200px;
+  height: 30px;
+  font-size: 28px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input.tel:focus ~ label.tel,
+input.tel:valid ~ label.tel {
+  bottom: 305px;
+  font-size: 14px;
+  color: var(--cor0);
+}
+
+label.cpf {
+  color: rgb(68, 71, 90);
+  font-weight: 900;
+  position: absolute;
+  bottom: 300px;
+  left: 800px;
+  width: 200px;
+  height: 30px;
+  font-size: 28px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input.cpf:focus ~ label.cpf,
+input.cpf:valid ~ label.cpf {
+  bottom: 305px;
+  font-size: 14px;
+  color: var(--cor0);
+}
+
+label.cep {
+  color: rgb(68, 71, 90);
+  font-weight: 900;
+  position: absolute;
+  bottom: 232px;
+  left: 845px;
+  width: 200px;
+  height: 30px;
+  font-size: 28px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input.cep:focus ~ label.cep,
+input.cep:valid ~ label.cep {
+  bottom: 238px;
+  font-size: 14px;
+  color: var(--cor0);
+}
+
+label.data {
+  color: var(--cor0);
+  font-weight: 900;
+  position: absolute;
+  bottom: 235px;
+  left: 450px;
+  width: 200px;
+  height: 30px;
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+label.senha {
+  color: rgb(68, 71, 90);
+  font-weight: 900;
+  position: absolute;
+  bottom: 165px;
+  left: 450px;
+  width: 200px;
+  height: 30px;
+  font-size: 28px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+input.senha:focus ~ label.senha,
+input.senha:valid ~ label.senha {
+  bottom: 170px;
+  font-size: 14px;
+  color: var(--cor0);
+}
+
+input.nome {
+  width: 350px;
+}
+
+input.sobrenome {
+  margin-left: 30px;
+  width: 400px;
+}
+
+input.email {
+  width: 700px;
+}
+
+input.tel {
+  width: 360px;
+}
+
+input.cpf {
+  margin-left: 30px;
+  width: 400px;
+}
+
+input.data {
+  width: 360px;
+}
+
+input.cep {
+  margin-left: 30px;
+  width: 300px;
+}
+
+input.senha {
+  width: 440px;
+}
+
+#row1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+
+#row2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+
+#row3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+
+#row4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+
+#row5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+
+#row6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: -18px;
+  height: 150px;
+}

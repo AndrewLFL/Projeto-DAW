@@ -2,188 +2,284 @@
 @import url('https://fonts.googleapis.com/css2?family=Labrada:wght@400;500;700;900&family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800;900&display=swap');
 
-
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
 
 html {
-  scroll-behavior: smooth;
-}
- 
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+  }
+
 :target {
-  scroll-margin-top: 120px;
+    scroll-margin-top: 120px;
 }
 
+html,  
 body{
-    margin: 0;
-    max-width: 100vw;
-    padding: 10px;
+    height: 100vh;
     background-color: #14101d;
     font-family: "Noto Sans","Sans Serif";
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-size: 1.6rem;
 }
 
 /**********************HEADER*****************************/
 
-#supreme-header{
+header{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
-header{
+header div#fixo
+{
     background-color: #3d416f;
-    width: 100vw;
-    margin: -10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
-    padding-left: 10px;
-    padding-right: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-.logo{
-    width: 240px;
-    padding-top: 15px;
-    padding-left: 28px;
-    }
+header div#fixo div#logo
+{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-#busca{
-    width: 600px;
-    height: 30px;
+header div#fixo div#logo img
+{
+    width: 100%;
+}
+
+header div#fixo div#barra-pesquisa
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 60%;
+    outline: none;
+    border: none;
+}
+
+header div#fixo div#barra-pesquisa input
+{
+    width: 80%;
+    height: 40%;
     border-radius: 20px;
     outline: none;
     border: none;
     padding-left: 20px;
+    font-size: 3rem;
 }
 
-#lupa{
-    width: 17px;
-    position: absolute;
-    left: 930px;
+header div#fixo div#barra-pesquisa label.lupa
+{
+    position: relative;
+    left: 5%;
+    width: 3%;
+    transition: 0.5s;
+    cursor: pointer;
+    pointer-events: none;
 }
 
-#header-lateral{
-    width: 300px;
-    height: 90px;
+header div#fixo div#barra-pesquisa img
+{
+    width: 100%;
+}
+
+/* ARRUMAR A LUPA */
+input#busca:focus ~ label#lupa,
+input#busca:valid ~ label#lupa
+{
+    position: relative;
+    left: 55%;
+}
+
+header div#fixo div#right
+{
+    width: 20%;
+    outline: none;
+    border: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-right:25px;
 }
 
-#img-conta{
-width: 80px;
-}
-
-#menu{
-    width: 50px;
-    margin-right: 20px;
-}
-
-#carrinho{
-    width: 50px;
-}
-
-#filtro{
-    background-color: #4d517b;
-    width: 70vw;
-    height: 140px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 45px;
-    padding-right: 45px;
-}
-
-a{
-    text-decoration: none;
-    color: #4d517b;
-}
-
-.opcoes{
-    background-color: #a66891;
-    border-radius: 7px;
-    width: 210px;
-    height: 25px;
-    margin-top: 100px;
-    color: #4d517b;
+header div#fixo div#right div#usuario
+{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Labrada","Sans Serif";
-    font-weight: 900;
-    font-size: 19px;
+    width: 34%;
+    outline: none;
+    border: none;
 }
 
-#corpo{
+header div#fixo div#right div#usuario img
+{
+    width: 70%;
+}
+
+header div#fixo div#right div#carrinho
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    outline: none;
+    border: none;
+}
+
+header div#fixo div#right div#carrinho img
+{
+    width: 50%;
+}
+
+header div#fixo div#right div#menu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    outline: none;
+    border: none;
+}
+
+header div#fixo div#right div#menu img
+{
+    width: 50%;
+}
+
+/**********************CORPO*****************************/
+
+main
+{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#intro{
-    background-color: #a66891;
-    width: 90vw;
-    height: 130px;   
-    margin-top: 60px; 
-    border-radius: 24px;
-    margin-bottom: -60px;
+div#filtro
+{
+    margin-top: 98px;
+    background-color: rgb(77, 81, 123);
+    width: 80%;
+    height: 40px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+div#filtro div.ancora
+{
+    background-color: #a66891;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding-bottom: 1rem;
+}
+
+div#filtro div.ancora a
+{
+    font-family: "Labrada","Sans Serif";
+    font-size: 1.7rem;
+    color: #ebebebee;
+    text-decoration: none;
+}
+
+main div#promocao
+{
+    margin-top: 8rem;
+    background-color: rgb(166, 104, 145);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    height: 179px;
+    width: 90%;
+}
+
+main div#promocao #left-promo
+{
+    border-radius: 24px 110px 0px 20px;
+    background-color: #3d416f;
+    display: flex;
+    flex-direction: row;
+    width: 42%;
+}
+
+main div#promocao #left-promo #intro-witch
+{
+    width: 100%;
+}
+
+main div#promocao #right-promo 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #frase-intro{
     font-family: "Noto Sans","Sans Serif";
     font-weight: 800;
-    font-size: 20px;
+    font-size: 2rem;
     line-height:30px;
     text-align: center;
     color: #dfebed;
     text-transform: uppercase;
-    margin-top: -50px;
-    margin-right: 80px;
-    margin-left: 460px;
 }
 
-#intro-waves{
-    margin-top: 0px;
-    width: 403px;
-}
+/******************************************************************/
 
-#intro-witch{
-    width: 500px;
-    height: 140px;
-    margin-left: -468px;
-    margin-top: -10px;
-}
-
-/**********************CORPO*****************************/
-
-.loja{
+main div#produtos
+{
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 90px;
-    width: 93vw;
-    height: 900px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-}
-.separar{
-    width: 90vw;
-    height: 50px;
-    margin-bottom: 25px;
-    font-family: "Labrada","Sans Serif";
-    font-weight: 900;
-    font-size: 30px;
-    color: #dfebed;
-    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+main div#produtos .titulo
+{
+    text-align: center;
+    color: #dfebed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Labrada","Sans Serif";
+    font-weight: 900;
+    font-size: 4rem;
+    margin: 2rem;
+    line-height: 5rem;
+}
+
+.linha{
+    margin-top: 8px;
+    border-radius: 20px;
+    background-color: #dfebed;
+    height: 10px;
+    width: 41%;
 }
 
 .text-ancora{
@@ -191,236 +287,218 @@ a{
     margin-right: 14px;
 }
 
-.linha{
-    margin-top: 8px;
-    background-color: #dfebed;
-    width: 500px;
-    height: 6px;
+main div#produtos .produtos-grid
+{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 2rem;
 }
 
-.produtos{
-    background-color: #5d9da6;
-    width: 350px;
-    height: 350px;
-    border-radius: 20px;
-    margin-bottom: 20px;
+.produto{
+    padding-top: 2rem;
+    background-color: #f8fafc;
+    width: 100%;
+    height: 500px;
+    border-radius: 24px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem {
+    width: 90%;
+    height: 80%;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img{
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 20%;
+}
+
+.content > p
+{
+    text-transform: uppercase;
+    font-family: "Noto Sans", Sans-Serif;
+    font-weight: 900;
+}
+
+.content > p.preco-produto
+{
+    color: rgb(120, 128, 154);
+    font-size: 2rem;
+    text-align: end;
+}
+
+.content > p.nome-produto
+{
+    color: #14101d;
+    font-size: 2.6rem;
+    text-align: center;
 }
 
 /**********************FOOTER*****************************/
 
-#footer{
-    margin-top: 1700px;
-    height: 600px;
+footer{
+    margin-top: 1%;
+    background-color: rgb(77, 81, 123);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0fr 0fr;
+}
+
+footer div#waves
+{
+    margin-top: -1rem;
+    background-color: #14101d;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    width: 100%;
+}
+
+footer div#barra-busca 
+{
+    padding-top: 20%;
+    margin-top: -0.6rem;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
     display: flex;
     flex-direction: column;
-    padding: 0;
-    justify-items:center;
     align-items: center;
+    background-color: rgb(77, 81, 123);
 }
 
-#footer-supreme{
-    background-color: #4d517b;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    padding-bottom: 40px;
+footer div#barra-busca input
+{
+    width: 80%;
+    height: 12%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 3rem;
 }
 
-#footer-wave{
-    margin-bottom: -50px;
-}
-
-/***FOOTER LEFT***/
-
-#footer-left{
-    width: 403px;
-    padding-left: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    height: 200px;
-    margin: 0;
-}
-#busca2{
-        width: 400px;
-        height: 30px;
-        border-radius: 20px;
-        outline: none;
-        border: none;
-        padding-left: 20px;
-}
-
-#text-left{
-margin-top: 40px;
-margin-bottom: -58px;
-width: 400px;
-height: 80px;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-#footer-perdido{
-    font-family: "Labrada","Sans Serif";
-    font-weight:600;
-    font-size: 18px;
-    color: #dfebed;  
-    margin: 0; 
-}
-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0; 
-
-}
-.links-nav{
-    font-family: "Labrada","Sans Serif";
-    font-weight:600;
-    font-size: 18px;
-    color: #dfebed; 
-    text-decoration: none;  
-    margin: 0; 
-}
-#nav2{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.barrinha{
-    margin-left: 10px;
-    margin-right: 10px;
-    font-family: "Labrada","Sans Serif";
-    font-weight:600;
-    font-size: 18px;
-    color: #dfebed; 
-}
-
-/***FOOTER CENTER***/
-
-#footer-center{
-    width: 403px;
+div#barra-busca > div#txt
+{
+    margin-top: 8%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 200px;
-    }
-
-#h-logo{
-    margin-left: 45px;
-    margin-bottom: 10px;
-    width: 300px;
 }
 
-#text-center{
-    margin-top: 10px;
+div#barra-busca > div#txt > p{
+    margin-top: 5%;
+    color: #dfebed;
+    font-family: "Labrada", Sans-Serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+div#barra-busca > div#txt > p > a{
+    color: #dfebed;
+    text-decoration: none;
+    font-family: "Labrada", Sans-Serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+footer div#logo-2{
+    margin-top: -0.6rem;
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 2/4;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: space-between;
-    justify-content: space-between;
-    height: 45px;
-    width: 350px;
+    background-color: rgb(77, 81, 123);
+    padding-bottom: 70%;
 }
 
- #p-foote-center{
-    font-family: "Labrada","Sans Serif";
-    font-weight:600;
-    font-size: 18px;
-    color: #dfebed;  
-    padding-bottom: -80px;
-    margin: 0;
- }
-
-#sub-footer-center{
-    font-family: "Labrada","Sans Serif";
-    font-weight:600;
-    font-size: 18px;
-    color: #dfebed;  
-    margin: 0;
-}
-
-/***FOOTER RIGHT***/
-
-#footer-right{
-    width: 403px;
-    padding-right: 40px;
-    padding-left: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    height: 200px;
-    margin: 0;
-}
-
-#barra-elegante{
-    background-color: #dfebed;
-    width: 110px;
-    height: 6px;
-    border-radius: 10px;
-}
-#redes1{
-    margin-left: 10px;
-    width: 40px;
-    margin-right: 10px;
-}
-#redes2{
-    margin-left: 10px;
-    width: 40px;
-    margin-right: 10px;
-    }
-#redes3{
-    margin-left: 10px;
-    width: 40px;
-    margin-right: 10px;
-    }
-
-#redes{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 400px;
-    height: 60px;
-    margin-top: -20px;
-    margin-bottom: 20px;
-
-}
-
-#text-right{
-width: 400px;
-height: 90px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-items: space-between;
-margin-bottom: -58px;
-margin-top: -5px;
-}
-
-#siga{
+div#logo-2 > p{
+    color: #dfebed;
+    font-family: "Labrada", Sans-Serif;
+    font-weight: 700;
+    font-size: 2.6rem;
     text-align: center;
-    font-family: "Labrada","Sans Serif";
-    font-weight:600;
-    font-size: 18px;
-    color: #dfebed;  
-    margin: 0;
-    line-height: 20px;
-    margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
-#feitopor{
-    font-family: "Labrada","Sans Serif";
-    font-weight:600;
-    font-size: 18px;
-    color: #dfebed;  
-    margin: 0;
+div#logo-2 img{
+    position: relative; 
+    left: 12%;
+    width: 100%;
 }
+
+footer div#redes-sociais
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(77, 81, 123);
+}
+
+footer div#redes-sociais div#imagens{
+    margin-top: -0.6rem;
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(77, 81, 123);
+    padding-top: 15%;
+    padding-bottom: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+footer div#redes-sociais img{
+    width: 10%;
+    margin: 0 1rem;
+}
+
+footer div#redes-sociais div#texto
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div#redes-sociais div#texto > p{
+    color: #dfebed;
+    text-align: center;
+    font-family: "Labrada", Sans-Serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    max-width: 80%;
+}
+

@@ -34,6 +34,14 @@ body
   padding-top: 15px;
   padding-left: 28px;
 }
+
+body header .logoMobile{
+  display: none;
+}
+
+body header #menu{
+  display: none;
+}
   
 header{
 display: flex;
@@ -282,104 +290,6 @@ body section .right-div table td p.numero
   letter-spacing: 1px;
 }
 
-@media screen and (min-width: 1900px)
-{
-  body header li{
-    font-size:2.7rem;
-  }
-
-  body main .left-div{
-    margin-left: 8%;
-  }
-  
-  body main .left-div .loja-btn
-  {
-    height: 7rem;
-  }
-
-  body main .left-div #hat
-  {
-      width: 40%;
-      position: absolute;
-      top: -190%;
-      left: -1%;
-  }
-}
-
-
-
-@media screen and (max-width: 1380px)
-{
-
-  body header li{
-    font-size:2.7rem;
-  }
-
-  body main .left-div{
-    margin-left: 8%;
-  }
-
-  body main .left-div h1{
-    font-size: 6.5rem;
-  }
-  
-  body main .left-div h2{
-    font-size: 3rem;
-  }
-
-  body main .left-div p{
-    font-size: 1.6rem;
-    max-width: 600px;
-  }
-
-  body main .left-div #hat
-  {
-      width: 40%;
-      position: absolute;
-      top: -150%;
-      left: -1%;
-  }
-}
-  
-@media screen and (max-width: 1024px){
-  body header .logo{
-    width: 25%;
-  }
-
-  body header li{
-    font-size:2.5rem;
-  }
-
-  body main .leftdiv{
-    margin-left: 2%;
-  }
-
-  body main .left-div h1{
-    font-size: 4.5rem;
-  }
-  
-  body main .left-div h2{
-    font-size: 2.25rem;
-  }
-
-  body main .left-div p{
-    font-size: 1.4rem;
-    max-width: 550px;
-  }
-
-  body main .left-div a{
-    width: 65%;
-  }
-
-  body main .left-div .loja-btn{
-    width: 100%;
-  }
-
-  body main .right-div{
-    width: 50%;
-  }
-}
-
 /*footer*/
 
 footer{
@@ -533,4 +443,81 @@ footer div#redes-sociais div#texto > p{
   background-color: #dfebed;
   height: 10px;
   width: 41%;
+}
+
+@media screen and (max-width: 425px)
+{
+
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #3d416f;
+}
+
+header > ul{
+  height: 80px;
+}
+
+header > ul > a{
+  display: none;
+  
+}
+
+body header #menu{
+  display: block;
+  width: 14%;
+  margin-bottom: -0.57em;
+  margin-left: 5%;
+}
+
+body header #perfil{
+  display: block;
+  width: 16%;
+}
+
+body header .logo{
+  display: none;
+}
+
+body header .logoMobile{
+  display: block;
+  width: 50%;
+  padding-top: 2%;
+  margin-left:10%;
+}
+
+menu{
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3d416f;
+}
+
+menu>a{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family: "Labrada",serif;
+  font-weight: 600;
+  font-size:2.3rem;
+}
+
+main > .left-div > h1,h2{
+  font-size: 3rem;
+}
+
+}
+
+
+@media screen and (max-width: 1380px)
+{
+
+}
+  
+@media screen and (max-width: 1024px){
+
 }

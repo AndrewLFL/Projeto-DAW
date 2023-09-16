@@ -225,7 +225,7 @@ body section {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin-top: 0px;
+  margin-top: 18px;
 }
 
 body section .left-div {
@@ -361,6 +361,54 @@ div#barra-busca > div#txt > p {
   letter-spacing: 1px;
 }
 
+div#barra-busca > div#txt > div#uma-linha
+{
+  margin-top: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div#barra-busca > div#txt > div#duas-linhas 
+{
+  display: none;
+}
+
+div#barra-busca > div#txt > div#uma-linha > p
+{
+  margin-top: 5%;
+  color: #dfebed;
+  font-family: "Labrada", Sans-Serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+  div#barra-busca > div#txt > div#lista-vertical{
+    display: none;
+  }
+
+  div#barra-busca > div#txt > div#lista-horizontal
+  {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  div#barra-busca > div#txt > div#lista-horizontal > a {
+    color: #dfebed;
+    text-decoration: none;
+    font-family: "Labrada", Sans-Serif;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+  }
+
+
 div#barra-busca > div#txt > p > a {
   color: #dfebed;
   text-decoration: none;
@@ -451,7 +499,7 @@ footer div#redes-sociais div#texto > p {
   width: 41%;
 }
 
-/*Celular*/
+/*Celular na Vertical*/
 
 @media screen and (max-width: 425px) {
   header {
@@ -648,7 +696,7 @@ footer div#redes-sociais div#texto > p {
   }
 
   footer div#waves {
-    margin-top: 0;
+    margin-top: -1;
     background-color: #14101d;
     width: 100%;
   }
@@ -681,16 +729,45 @@ footer div#redes-sociais div#texto > p {
     justify-content: center;
   }
 
-  div#barra-busca > div#txt > p {
-    margin-top: 5%;
-    color: #dfebed;
-    font-family: "Labrada", Sans-Serif;
-    font-weight: 700;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
+div#barra-busca > div#txt > div#uma-linha
+{
+  margin-top: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div#barra-busca > div#txt > div#duas-linhas 
+{
+  display: none;
+}
+
+div#barra-busca > div#txt > div#uma-linha > p
+{
+  margin-top: 5%;
+  color: #dfebed;
+  font-family: "Labrada", Sans-Serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+  div#barra-busca > div#txt > div#lista-vertical{
+    display: none;
   }
 
-  div#barra-busca > div#txt > p > a {
+  div#barra-busca > div#txt > div#lista-horizontal
+  {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  div#barra-busca > div#txt > div#lista-horizontal > a {
     color: #dfebed;
     text-decoration: none;
     font-family: "Labrada", Sans-Serif;
@@ -784,7 +861,344 @@ footer div#redes-sociais div#texto > p {
   }
 }
 
-@media screen and (max-width: 1380px) {
+/*Celular na Horizontal*/
+@media screen and (min-width: 426px) and (max-width: 735px)
+{
+
+/*MENU*/
+.logo {
+  width: 30%;
+  padding-top: 15px;
+  padding-left: 28px;
+}
+
+body header .logoMobile {
+  display: none;
+}
+
+body header #menu {
+  display: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+  margin: 20px;
+  font-family: "Labrada", serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-left: 0px;
+  margin-right: 43px;
+}
+
+/* Main */
+
+body > main > div.left-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  justify-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0;
+}
+
+body > main > div.left-div > h1 {
+  margin-top: 5%;
+  font-size: 2.5em;
+}
+
+body > main > div.left-div > h2 {
+  font-size: 1.5em;
+}
+
+body > main > div.left-div > p {
+  font-size: 1em;
+}
+
+body > main > div.left-div > #link {
+  margin-top: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+body > main > div.left-div > #link > a {
+  margin-top: 10.5%;
+  width: 100%;
+}
+
+body > main > div.left-div > #link > a > #hat {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 11%;
+}
+
+body > main > div.left-div > #link > a > button {
+  width: 100%;
+}
+
+body > main > div.right-div {
+  display: none;
+}
+
+body > section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+body > section > div.left-div {
+  display: none;
+}
+
+body > section > div.right-div {
+  margin: 0%;
+  margin-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+}
+
+body > section > .right-div > #witch-mobile {
+  display: block;
+  width: 66%;
+  margin-top: -10%;
+}
+
+body > section > div.right-div > h2 {
+  font-size: 1.5em;
+}
+
+body > section > div.right-div > p {
+  font-size: 1em;
+  text-align: justify;
+}
+
+body section .right-div #tabela {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+body section .right-div table {
+  width: 60%;
+  border-collapse: collapse;
+  border: solid;
+  border-width: 2px;
+  padding: 1rem;
+}
+
+body section .right-div table td {
+  width: 60%;
+  border-collapse: collapse;
+  border: solid;
+  border-width: 2px;
+  padding: 1rem;
+}
+
+body section .right-div table td p.titulo {
+  font-size: 2.2rem;
+  font-family: "Labrada", serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+body section .right-div table td p.numero {
+  font-size: 2.2rem;
+  font-family: "Noto sans", serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+/*footer*/
+
+footer {
+  margin-top: 1%;
+  background-color: rgb(77, 81, 123);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0fr 0fr;
+}
+
+footer div#waves {
+  margin-top: 0;
+  background-color: #14101d;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  width: 100%;
+}
+
+footer div#barra-busca {
+  padding-top: 0%;
+  margin-top: -0.6rem;
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(77, 81, 123);
+}
+
+footer div#barra-busca input {
+  width: 90%;
+  height: 12%;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  font-size: 3rem;
+}
+
+div#barra-busca > div#txt {
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div#barra-busca > div#txt > div#uma-linha
+{
+  display: none;
+}
+
+div#barra-busca > div#txt > div#duas-linhas 
+{
+  margin-top: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div#barra-busca > div#txt > div#duas-linhas > p
+{
+  color: #dfebed;
+  font-weight: 700;
+  font-size: 1.3em;
+  letter-spacing: 0.6px;
+  font-family: "Labrada", Sans-Serif;
+}
+
+div#barra-busca > div#txt > div#lista-horizontal{
+  display: none;
+}
+
+div#barra-busca > div#txt > div#lista-vertical{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+div#barra-busca > div#txt > div#lista-vertical > a {
+  color: #dfebed;
+  text-decoration: none;
+  font-family: "Labrada", Sans-Serif;
+  font-weight: 700;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  margin: 3px;
+}
+
+footer div#logo-2 {
+  margin-top: -0.6rem;
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 2/4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(77, 81, 123);
+  padding-bottom: 70%;
+}
+
+div#logo-2 > p {
+  color: #dfebed;
+  font-family: "Labrada", Sans-Serif;
+  font-weight: 700;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+div#logo-2 img {
+  position: relative;
+  left: 10%;
+  width: 100%;
+}
+
+footer div#redes-sociais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: rgb(77, 81, 123);
+}
+
+footer div#redes-sociais div#imagens {
+  margin-top: -0.6rem;
+  width: 100%;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(77, 81, 123);
+  padding-top: 0%;
+  padding-bottom: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+footer div#redes-sociais img {
+  width: 10%;
+  margin: 0 1rem;
+}
+
+footer div#redes-sociais div#texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer div#redes-sociais div#texto > p {
+  color: #dfebed;
+  text-align: center;
+  font-family: "Labrada", Sans-Serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  max-width: 80%;
+}
+
+.linha {
+  margin-top: 8px;
+  border-radius: 20px;
+  background-color: #dfebed;
+  height: 10px;
+  width: 41%;
+}
 }
 
 @media screen and (max-width: 1024px) {

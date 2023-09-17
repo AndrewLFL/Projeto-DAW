@@ -1231,8 +1231,8 @@ li {
   font-family: "Labrada", serif;
   font-weight: 600;
   font-size: 1.5em;
-  margin-left: 27px;
-  margin-right: 43px;
+  margin-left: 28px;
+  margin-right: 28px;
 }
 
 /* Main */
@@ -1258,7 +1258,7 @@ body > main > div.left-div > h2 {
 }
 
 body > main > div.left-div > p {
-  font-size: 1em;
+  font-size: 1.1em;
   padding-left: 8%;
 }
 

@@ -1538,5 +1538,119 @@ footer div#redes-sociais div#texto > p {
   height: 10px;
   width: 41%;
 }
+}
 
+@media print {
+  * {
+      background: transparent;
+      color: #000;
+      text-shadow: none; 
+      filter: none;
+     -ms-filter: none;
+  }
+
+  header{
+    display: none;
+  }
+
+  body > main > div.left-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+  }
+
+  body > main > div.left-div > h1 {
+    margin-top: 5%;
+    font-size: 2.5em;
+  }
+
+  body > main > div.left-div > h2 {
+    font-size: 1.5em;
+  }
+
+  body > main > div.left-div > p {
+    font-size: 1em;
+  }
+
+  body > main > div.left-div > #link {
+    display: none;
+  }
+
+  body > main > div.right-div{
+    display: none;
+  }
+
+  body > section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  body > section > div.left-div {
+    display: none;
+  }
+
+  body > section > div.right-div {
+    margin: 0%;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+  }
+
+  body > section > div.right-div > h2 {
+    font-size: 1.5em;
+  }
+
+  body > section > div.right-div > p {
+    font-size: 1em;
+    text-align: justify;
+  }
+
+  body section .right-div #tabela {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+
+  body section .right-div table {
+    width: 60%;
+    border-collapse: collapse;
+    border: solid;
+    border-width: 2px;
+    padding: 1rem;
+  }
+
+  body section .right-div table td {
+    width: 60%;
+    border-collapse: collapse;
+    border: solid;
+    border-width: 2px;
+    padding: 1rem;
+  }
+
+  body section .right-div table td p.titulo {
+    font-size: 2.2rem;
+    font-family: "Labrada", serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  body section .right-div table td p.numero {
+    font-size: 2.2rem;
+    font-family: "Noto sans", serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+
+  footer{
+    display: none;
+  }
 }
